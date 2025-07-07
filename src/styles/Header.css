@@ -1,0 +1,231 @@
+.top-bar {
+  background: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 20px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.toggle-options {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.right-options {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.phone {
+  color: #444;
+}
+
+.lang-select {
+  padding: 2px 6px;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 18px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #6200ee;
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+
+.main-nav {
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons .login {
+  background: none;
+  border: none;
+  color: #6200ee;
+  cursor: pointer;
+}
+
+.auth-buttons .signup {
+  background: #6200ee;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logo {
+  height: 32px;
+} 
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 18px;
+  width: 22px;
+  padding: 0;
+}
+
+.menu-bar {
+  width: 100%;
+  height: 2px;
+  background-color: #2d2d2d;
+  border-radius: 2px;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 72px;
+  background-color: white;
+}
+
+.logo {
+  height: 48px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  margin-left: 6px;
+}
+
+.search-box .icon {
+  font-size: 16px;
+  color: #999;
+}
+
+.calendar-icon {
+  font-size: 20px;
+  color: #555;
+  cursor: pointer;
+}
+.nav-extras {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 8px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 4px;
+}
+
+.search-icon {
+  color: #555;
+  margin-right: 4px;
+}
+
+.calendar-icon {
+  font-size: 40px;
+  color: #333;
+  cursor: pointer;
+}
+
+.login {
+  background-color: transparent;
+  border: 1px solid #6a5acd;
+  color: #6a5acd;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login:hover {
+  background-color: #6a5acd;
+  color: #fff;
+}
